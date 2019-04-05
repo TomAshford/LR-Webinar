@@ -1,0 +1,132 @@
+$teal:#6bbdb9;
+
+$text:#333333;
+$grey:#666666;
+
+$black: #000000;
+$white: #ffffff;
+
+
+$helvetica: Helvetica, Arial, sans-serif;
+
+
+:root {
+  font-size:16px;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  font-size:16px;
+}
+img {
+  max-width:100%;
+}
+h1 {
+  font-family:$helvetica;
+  font-weight:700;
+  font-size:3.125rem;
+  line-height:1.2em;
+  @media(max-width:1400px) {
+    font-size:2.5rem;
+  }
+  @media(max-width:600px) {
+    font-size:2rem;
+  }
+}
+h2 {
+  font-family:$helvetica;
+  font-weight:700;
+  font-size:1.875rem;
+  line-height:1.2em;
+  @media(max-width:1400px) {
+    font-size:2rem;
+  }
+}
+h3 {
+  font-family:$helvetica;
+  font-size:1.875rem;
+  line-height:1.2em;
+  font-weight:400;
+  @media(max-width:1400px) {
+    font-size:1.75rem;
+  }
+}
+h4 {
+  font-family:$helvetica;
+  font-size:1.5rem;
+  line-height:1.2em;
+  font-weight:400;
+}
+h5 {
+  font-family:$helvetica;
+  font-weight:400;
+  font-size:1.25rem;
+  line-height:1.2em;
+  font-weight:400;
+}
+h6 {
+  font-family:$helvetica;
+  font-size:1rem;
+  line-height:1.2em;
+  font-weight:400;
+}
+p {
+  font-family:$helvetica;
+  font-size:1.25rem;
+  line-height:1.3em;
+  @media(max-width:600px) {
+    font-size:1.125rem;
+  }
+}
+li {
+  font-family:$helvetica;
+  font-size:1.25rem;
+  line-height:1.3em;
+}
+blockquote {
+  font-family:$helvetica;
+  font-weight:400;
+  font-size:2.5rem;
+  line-height:1.2em;
+  text-transform:uppercase;
+  @media(max-width:1400px) {
+    font-size:2.25rem;
+  }
+  @media(max-width:600px) {
+    font-size:1.75rem;
+  }
+}
+.button {
+  font-family:$helvetica;
+  font-weight:700;
+  font-size:1.5rem;
+  line-height:1.2em;
+  text-align:center;
+  display:inline-block;
+  transition:all 0.25s ease;    
+  max-width:100%;
+  padding: 24px 81px 23px 2em;
+  border-radius: 90px;
+  color:$white;
+  text-transform:uppercase;
+  text-decoration:none;
+  cursor: pointer;
+  line-height: 1em;
+  background-color: $teal;
+  border:0;
+  transition: all .2s ease-in-out;
+  position:relative;
+  margin:0;
+  @media(max-width:600px) {
+    font-size:1rem;
+  }
+  &:hover {
+    background-color: $text;
+  }
+}
+.footer-container-wrapper {
+  display:none;
+}
