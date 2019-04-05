@@ -1,2 +1,12 @@
 @import "var/global";
 @import "var/mixins";
+
+@import "modules/header";
+@import "modules/icon-listing";
+@import "modules/listing";
+
+.webinar {
+	&__container {
+		@include container;
+	}
+}

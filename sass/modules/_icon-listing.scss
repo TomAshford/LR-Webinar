@@ -1,0 +1,59 @@
+.icon {
+	display:flex;
+	flex-flow:row;
+	justify-content:space-around;
+	padding-bottom:118px;
+	margin-top:-40px;
+	&__item {
+		flex:0 0 178px;
+		position:relative;
+		cursor:pointer;
+		&--soon {
+			.icon__image {
+				filter:blur(4px);
+				opacity: 0.4;
+			}
+			&:after {
+				content: 'Coming soon';
+			    position: absolute;
+			    top: 50%;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    font-size:1.375rem;
+			    font-family:$helvetica;
+			    font-weight:700;
+			    line-height:1.2em;
+			    text-align:center;
+			    color:$white;
+			}
+		}
+	}
+	&__inner {
+		width:100%;
+		height:100%;
+		border:3px solid $white;
+		background:$text;
+		padding:30px;
+		display: flex;
+	    flex-flow: column;
+	    justify-content: center;
+	    align-items: center;
+	}
+	&__topic {
+		background:$teal;
+		position:absolute;
+		bottom:-12px;
+		left:50%;
+		transform:translateX(-50%);
+		width:100%;
+		max-width:144px;
+		p {
+			margin:0;
+			color:$white;
+			font-size:1rem;
+			font-weight:700;
+			line-height:2em;
+			padding:0 15px;
+		}
+	}
+}

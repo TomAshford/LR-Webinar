@@ -1,0 +1,33 @@
+.header {
+	border-top:10px solid $teal;
+	padding:105px 0 150px;
+	background: {
+		size:cover;
+		position:50%;
+		repeat:no-repeat;
+	}
+	&__container {
+		@include container;
+		text-align:center;
+	}
+	&__logo {
+		padding-bottom:90px;
+	}
+	&__text {
+		margin:0 auto;
+		max-width:750px;
+		p {
+			&:first-child {
+				text-transform:uppercase;
+				font-size:1.375rem;
+			}
+			margin:0 0 30px;
+			color:$white;
+			font-weight:700;
+		}
+		h1 {
+			margin:0 0 25px;
+			color:$white;
+		}
+	}
+}
