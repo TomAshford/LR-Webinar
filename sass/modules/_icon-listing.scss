@@ -1,13 +1,23 @@
 .icon {
 	display:flex;
-	flex-flow:row;
+	flex-flow:row wrap;
 	justify-content:space-around;
 	padding-bottom:118px;
 	margin-top:-40px;
+	@media(max-width:992px) {
+		margin-bottom:-40px;
+	}
 	&__item {
 		flex:0 0 178px;
 		position:relative;
 		cursor:pointer;
+		@media(max-width:992px) {
+			flex:0 0 45%;
+			margin-bottom:40px;
+		}
+		@media(max-width:600px) {
+			flex:0 0 90%;
+		}
 		&--soon {
 			.icon__image {
 				filter:blur(4px);
@@ -27,6 +37,18 @@
 			    color:$white;
 			}
 		}
+		@media(hover: hover) {
+			&:hover {
+				.icon {
+					&__inner {
+						background:$teal;
+					}
+					&__topic {
+						background:$text;
+					}
+				}
+			}
+		}
 	}
 	&__inner {
 		width:100%;
@@ -38,6 +60,7 @@
 	    flex-flow: column;
 	    justify-content: center;
 	    align-items: center;
+	    transition:all 0.3s;
 	}
 	&__topic {
 		background:$teal;
@@ -45,8 +68,9 @@
 		bottom:-12px;
 		left:50%;
 		transform:translateX(-50%);
-		width:100%;
-		max-width:144px;
+		width:auto;
+		max-width:100%;
+		transition:all 0.3s;
 		p {
 			margin:0;
 			color:$white;
@@ -54,6 +78,7 @@
 			font-weight:700;
 			line-height:2em;
 			padding:0 15px;
+			white-space:nowrap;
 		}
 	}
 }
