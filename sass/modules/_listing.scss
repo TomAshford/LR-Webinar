@@ -1,4 +1,11 @@
 .listing {
+	&__link {
+		position:absolute;
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+	}
 	&__item {
 		position:relative;
 		padding:30px 100px 60px;
@@ -32,6 +39,11 @@
 					display:none;
 					margin:0;
 				}
+			}
+		}
+		&:hover {
+			.button {
+				background-color: $text;
 			}
 		}
 	}
